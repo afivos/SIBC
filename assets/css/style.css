@@ -1,0 +1,241 @@
+a, .navbar .logo img {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #888;
+  line-height: 1.5; }
+
+p {
+  margin-bottom: 7.5%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #111;
+  margin-bottom: 5%; }
+
+a {
+  text-decoration: none;
+  color: #CF2427;
+  cursor: pointer; }
+  a:hover, a:active {
+    text-decoration: underline;
+    color: #CF2427; }
+
+.container-colored {
+  background-color: #8e191b;
+  padding: 7.5% 0;
+  margin-bottom: 10%;
+  color: #bfbfbf; }
+  .container-colored h1, .container-colored h2, .container-colored h3, .container-colored h4, .container-colored h5, .container-colored h6 {
+    color: #fff !important; }
+  .container-colored a {
+    color: white;
+    text-decoration: underline; }
+
+.container-video {
+  margin-top: 7.5%; }
+
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+img {
+  max-width: 100%; }
+
+.navbar {
+  margin: 10% 0 5% 0; }
+  .navbar .logo img:hover {
+    opacity: 0.6; }
+  @media (max-width: 60em) {
+    .navbar .logo img {
+      max-width: 9rem; } }
+  @media (max-width: 45em) {
+    .navbar .logo img {
+      margin: 0 auto;
+      display: block; } }
+  .navbar .nav {
+    margin-top: 3% !important; }
+    @media (min-width: 60em) {
+      .navbar .nav {
+        text-align: right; } }
+    @media (max-width: 45em) {
+      .navbar .nav {
+        text-align: center; } }
+    .navbar .nav li {
+      display: inline-block;
+      margin-left: 1.5rem; }
+      @media (max-width: 60em) {
+        .navbar .nav li {
+          margin-left: 1rem; } }
+      @media (max-width: 45em) {
+        .navbar .nav li {
+          margin-right: 0.35rem;
+          margin-left: 0.35rem; } }
+    .navbar .nav a {
+      color: inherit;
+      font-size: 90%; }
+      .navbar .nav a:hover, .navbar .nav a:active {
+        text-decoration: none;
+        color: #CF2427; }
+
+.current {
+  color: #CF2427; }
+
+.credits a {
+  color: inherit; }
+  .credits a:hover {
+    color: #CF2427;
+    text-decoration: none; }
+
+.credits img {
+  margin-top: 15%;
+  max-width: 9rem; }
+  @media (max-width: 60em) {
+    .credits img {
+      max-width: 9rem; } }
+  @media (max-width: 45em) {
+    .credits img {
+      margin: 0 auto;
+      display: block; } }
+
+footer {
+  padding: 20% 0 5% 0; }
+  footer img {
+    max-width: 8rem;
+    max-height: 4rem;
+    margin-bottom: 5%; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.justify {
+  text-align: justify; }
+
+.hidden-sm {
+  display: none; }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 33.75em) {
+    .container {
+      width: 80%; } }
+  @media only screen and (min-width: 60em) {
+    .container {
+      width: 75%;
+      max-width: 60rem; } }
+
+.row {
+  position: relative;
+  width: 100%; }
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%; }
+
+.col-1-sm {
+  width: 4.3333333333%; }
+
+.col-2-sm {
+  width: 12.6666666667%; }
+
+.col-3-sm {
+  width: 21%; }
+
+.col-4-sm {
+  width: 29.3333333333%; }
+
+.col-5-sm {
+  width: 37.6666666667%; }
+
+.col-6-sm {
+  width: 46%; }
+
+.col-7-sm {
+  width: 54.3333333333%; }
+
+.col-8-sm {
+  width: 62.6666666667%; }
+
+.col-9-sm {
+  width: 71%; }
+
+.col-10-sm {
+  width: 79.3333333333%; }
+
+.col-11-sm {
+  width: 87.6666666667%; }
+
+.col-12-sm {
+  width: 96%; }
+
+@media only screen and (min-width: 45em) {
+  .col-1 {
+    width: 4.3333333333%; }
+  .col-2 {
+    width: 12.6666666667%; }
+  .col-3 {
+    width: 21%; }
+  .col-4 {
+    width: 29.3333333333%; }
+  .col-5 {
+    width: 37.6666666667%; }
+  .col-6 {
+    width: 46%; }
+  .col-7 {
+    width: 54.3333333333%; }
+  .col-8 {
+    width: 62.6666666667%; }
+  .col-9 {
+    width: 71%; }
+  .col-10 {
+    width: 79.3333333333%; }
+  .col-11 {
+    width: 87.6666666667%; }
+  .col-12 {
+    width: 96%; }
+  .hidden-sm {
+    display: block; } }

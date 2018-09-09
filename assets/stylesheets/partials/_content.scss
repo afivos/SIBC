@@ -1,0 +1,156 @@
+$width: 96%;
+$gutter: 4%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $font-content;
+	color: $color-main-text;
+	line-height: 1.5;
+}
+
+p {
+	margin-bottom: 7.5%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font-heading;
+	color: $color-heading;
+	margin-bottom: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: $color-red;
+	@extend %transition-2;
+	cursor: pointer;
+
+	&:hover,
+	&:active {
+		text-decoration: underline;
+		color: $color-link;
+	}	
+}
+
+.container {
+	//margin-bottom: 5%;
+}
+
+.container-colored {
+	background-color: $color-primary-dark;
+	padding: 7.5% 0;
+	margin-bottom: 10%;
+	color: darken($color-white, 25%);
+
+	h1,h2,h3,h4,h5,h6 {
+		color: $color-white !important;
+	}
+
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+.container-video {
+	margin-top: 7.5%;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.navbar {
+	margin: 10% 0 5% 0;
+
+	.logo {
+		img {
+			@extend %transition-2;
+
+			&:hover {
+				opacity: 0.6;
+			}
+
+			@media (max-width: $breakpoint-large) {
+				max-width: 9rem;
+			}
+
+			@media (max-width: $breakpoint-med) {
+				margin: 0 auto;
+				display: block;
+			}
+		}
+	}
+
+	.nav {
+		margin-top: 3% !important;
+
+		@media (min-width: $breakpoint-large) {
+			text-align: right;
+		}
+
+		@media (max-width: $breakpoint-med) {
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 1.5rem;
+
+			@media (max-width: $breakpoint-large) {
+				margin-left: 1rem;
+			}
+
+			@media (max-width: $breakpoint-med) {
+				margin-right: 0.35rem;
+				margin-left: 0.35rem;
+			}
+		}
+
+		a {
+			color: inherit;
+			font-size: 90%;
+
+			&:hover,
+			&:active {
+				text-decoration: none;
+				color: $color-link;
+			}	
+		}
+	}
+}
+
+.current { color: $color-red; }
+
+.credits {
+	a {
+		color: inherit;
+
+		&:hover {
+			color: $color-link;
+			text-decoration: none;
+		}
+	}
+
+	img {
+		margin-top: 15%;
+		max-width: 9rem;
+
+		@media (max-width: $breakpoint-large) {
+			max-width: 9rem;
+		}
+
+		@media (max-width: $breakpoint-med) {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}

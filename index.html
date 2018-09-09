@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Social Inclusion Brick Council</title>
+  <meta name="description" content="Social Inclusion Brick Council">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="container navbar">
+	<div class="row">
+		<div class="col-4">
+			<a href="/" class="logo"><img src="assets/images/logo.svg"></a>
+		</div>
+		<div class="col-8">
+			<ul class="nav">
+				<li><a href="/mission.html">Mission</a></li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li><a href="/research.html">Research</a></li>
+				<li><a href="/toolkit.html">Toolkit</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function navHighlight(elem, home, active) {
+    var url = location.href.split('/'),
+        loc = url[url.length -1],
+        link = document.querySelectorAll(elem);
+    for (var i = 0; i < link.length; i++) {
+        var path = link[i].href.split('/'),
+            page = path[path.length -1];
+        if (page == loc || page == home && loc == '') {
+            link[i].parentNode.className += ' ' + active;
+            document.body.className += ' ' + page.substr(0, page.lastIndexOf('.'));
+            }
+        }
+    }
+navHighlight('.nav a', 'index.html', 'current'); /* menu link selector, home page, highlight class */
+</script>
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<p>The Social Inclusion Brick Council is a proposal that hopes to help encourage public participation in urban planning.</p>
+
+			<p>The Council utilizes workshops to help foster conversations about the future of the built environment in any given place.</p>
+		</div>
+	</div>
+</div>
+
+<footer class="container center">
+	<small>SIBC <strong>&middot;</strong> <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script></small>
+
+	<!--<div class="row">
+		<img src="assets/images/dep-design.svg">
+	</div>-->
+	<!--<div class="row">
+		<img src="assets/images/goldsmiths.png">
+	</div>-->
+</footer>
+
+<script>
+var x = document.getElementById("reveal");
+x.style.display = "none";
+
+function revealSolution() {
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
